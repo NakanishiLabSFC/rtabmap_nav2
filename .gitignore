@@ -1,0 +1,6 @@
+*.db
+*.db-*
+build/
+install/
+log/
+__pycache__/

@@ -1,0 +1,280 @@
+<user>@<hostname> ~/nav2_ws  
+$ ros2 launch rtabmap_launch rtabmap.launch.py database_path:=~/maps/new_session_202615.db localization:=true publish_tf:=true rgbd_odometry:=false frame_id:=base_footprint odom_frame_id:=odom map_frame_id:=map subscribe_depth:=true subscribe_rgbd:=false rgb_topic:=/camera/color/image_raw depth_topic:=/camera/aligned_depth_to_color/image_raw camera_info_topic:=/camera/color/camera_info approx_sync:=true rtabmap_viz:=true Grid/FromDepth:=true Grid/RangeMax:=4.0 publish_map:=true publish_prob_map:=true publish_obstacles:=true use_sim_time:=false
+[INFO] [launch]: All log files can be found below ~/.ros/log/2026-01-05-17-49-21-817995-<hostname>-157699
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [rgbd_odometry-1]: process started with pid [157700]
+[INFO] [rtabmap-2]: process started with pid [157702]
+[INFO] [rtabmap_viz-3]: process started with pid [157704]
+[rtabmap-2] [INFO] [1767602962.527318707] [rtabmap.rtabmap]: rtabmap(maps): latch                      = true
+[rtabmap-2] [INFO] [1767602962.527612166] [rtabmap.rtabmap]: rtabmap(maps): map_filter_radius          = 0.000000
+[rtabmap-2] [INFO] [1767602962.527644083] [rtabmap.rtabmap]: rtabmap(maps): map_filter_angle           = 30.000000
+[rtabmap-2] [INFO] [1767602962.527663526] [rtabmap.rtabmap]: rtabmap(maps): map_cleanup                = true
+[rtabmap-2] [INFO] [1767602962.527683091] [rtabmap.rtabmap]: rtabmap(maps): map_always_update          = false
+[rtabmap-2] [INFO] [1767602962.527702313] [rtabmap.rtabmap]: rtabmap(maps): map_empty_ray_tracing      = true
+[rtabmap-2] [INFO] [1767602962.527718317] [rtabmap.rtabmap]: rtabmap(maps): cloud_output_voxelized     = true
+[rtabmap-2] [INFO] [1767602962.527736657] [rtabmap.rtabmap]: rtabmap(maps): cloud_subtract_filtering   = false
+[rtabmap-2] [INFO] [1767602962.527755345] [rtabmap.rtabmap]: rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2
+[rtabmap-2] [INFO] [1767602962.527819149] [rtabmap.rtabmap]: rtabmap(maps): octomap_tree_depth         = 16
+[rgbd_odometry-1] [INFO] [1767602962.570516338] [rtabmap.rgbd_odometry]: Odometry: frame_id               = base_footprint
+[rgbd_odometry-1] [INFO] [1767602962.570694335] [rtabmap.rgbd_odometry]: Odometry: odom_frame_id          = odom
+[rgbd_odometry-1] [INFO] [1767602962.570709759] [rtabmap.rgbd_odometry]: Odometry: publish_tf             = true
+[rgbd_odometry-1] [INFO] [1767602962.570720048] [rtabmap.rgbd_odometry]: Odometry: wait_for_transform     = 0.200000
+[rgbd_odometry-1] [INFO] [1767602962.570737798] [rtabmap.rgbd_odometry]: Odometry: log_to_rosout_level    = 4
+[rgbd_odometry-1] [INFO] [1767602962.570761026] [rtabmap.rgbd_odometry]: Odometry: initial_pose           = xyz=0.000000,0.000000,0.000000 rpy=0.000000,-0.000000,0.000000
+[rgbd_odometry-1] [INFO] [1767602962.570772354] [rtabmap.rgbd_odometry]: Odometry: ground_truth_frame_id  = 
+[rgbd_odometry-1] [INFO] [1767602962.570781983] [rtabmap.rgbd_odometry]: Odometry: ground_truth_base_frame_id = 
+[rgbd_odometry-1] [INFO] [1767602962.570791049] [rtabmap.rgbd_odometry]: Odometry: config_path            = 
+[rgbd_odometry-1] [INFO] [1767602962.570800440] [rtabmap.rgbd_odometry]: Odometry: publish_null_when_lost = true
+[rgbd_odometry-1] [INFO] [1767602962.570809620] [rtabmap.rgbd_odometry]: Odometry: publish_compressed_sensor_data = false
+[rgbd_odometry-1] [INFO] [1767602962.570818926] [rtabmap.rgbd_odometry]: Odometry: guess_frame_id         = 
+[rgbd_odometry-1] [INFO] [1767602962.570828005] [rtabmap.rgbd_odometry]: Odometry: guess_min_translation  = 0.000000
+[rgbd_odometry-1] [INFO] [1767602962.570838065] [rtabmap.rgbd_odometry]: Odometry: guess_min_rotation     = 0.000000
+[rgbd_odometry-1] [INFO] [1767602962.570848092] [rtabmap.rgbd_odometry]: Odometry: guess_min_time         = 0.000000
+[rgbd_odometry-1] [INFO] [1767602962.570858226] [rtabmap.rgbd_odometry]: Odometry: expected_update_rate   = 0.000000 Hz
+[rgbd_odometry-1] [INFO] [1767602962.570868297] [rtabmap.rgbd_odometry]: Odometry: max_update_rate        = 0.000000 Hz
+[rgbd_odometry-1] [INFO] [1767602962.570878278] [rtabmap.rgbd_odometry]: Odometry: min_update_rate        = 0.000000 Hz
+[rgbd_odometry-1] [INFO] [1767602962.570888101] [rtabmap.rgbd_odometry]: Odometry: wait_imu_to_init       = false
+[rgbd_odometry-1] [INFO] [1767602962.570897407] [rtabmap.rgbd_odometry]: Odometry: always_check_imu_tf    = true
+[rgbd_odometry-1] [INFO] [1767602962.570906439] [rtabmap.rgbd_odometry]: Odometry: sensor_data_compression_format = .jpg
+[rgbd_odometry-1] [INFO] [1767602962.570915564] [rtabmap.rgbd_odometry]: Odometry: sensor_data_parallel_compression = true
+[rgbd_odometry-1] [INFO] [1767602962.571740352] [rtabmap.rgbd_odometry]: Odometry: stereoParams_=0 visParams_=1 icpParams_=0
+[rtabmap-2] [INFO] [1767602962.595355226] [rtabmap.rtabmap]: rtabmap: frame_id      = base_footprint
+[rtabmap-2] [INFO] [1767602962.595400689] [rtabmap.rtabmap]: rtabmap: odom_frame_id = odom
+[rtabmap-2] [INFO] [1767602962.595417940] [rtabmap.rtabmap]: rtabmap: map_frame_id  = map
+[rtabmap-2] [INFO] [1767602962.595434041] [rtabmap.rtabmap]: rtabmap: log_to_rosout_level  = 4
+[rtabmap-2] [INFO] [1767602962.595452962] [rtabmap.rtabmap]: rtabmap: initial_pose  = 
+[rtabmap-2] [INFO] [1767602962.595469440] [rtabmap.rtabmap]: rtabmap: use_action_for_goal  = false
+[rtabmap-2] [INFO] [1767602962.595487875] [rtabmap.rtabmap]: rtabmap: tf_delay      = 0.050000
+[rtabmap-2] [INFO] [1767602962.595514907] [rtabmap.rtabmap]: rtabmap: tf_tolerance  = 0.100000
+[rtabmap-2] [INFO] [1767602962.595536887] [rtabmap.rtabmap]: rtabmap: odom_sensor_sync   = false
+[rtabmap-2] [INFO] [1767602962.595557020] [rtabmap.rtabmap]: rtabmap: pub_loc_pose_only_when_localizing = false
+[rtabmap-2] [INFO] [1767602962.595577238] [rtabmap.rtabmap]: rtabmap: wait_for_transform = 0.200000
+[rtabmap-2] [INFO] [1767602962.595603033] [rtabmap.rtabmap]: rtabmap: gen_scan  = false
+[rtabmap-2] [INFO] [1767602962.595623315] [rtabmap.rtabmap]: rtabmap: gen_depth  = false
+[rgbd_odometry-1] [INFO] [1767602962.629090140] [rtabmap.rgbd_odometry]: RGBDOdometry: approx_sync    = true
+[rgbd_odometry-1] [INFO] [1767602962.629154419] [rtabmap.rgbd_odometry]: RGBDOdometry: approx_sync_max_interval = 0.000000
+[rgbd_odometry-1] [INFO] [1767602962.629186756] [rtabmap.rgbd_odometry]: RGBDOdometry: topic_queue_size = 10
+[rgbd_odometry-1] [INFO] [1767602962.629211267] [rtabmap.rgbd_odometry]: RGBDOdometry: sync_queue_size  = 10
+[rgbd_odometry-1] [INFO] [1767602962.629232243] [rtabmap.rgbd_odometry]: RGBDOdometry: qos             = 0
+[rgbd_odometry-1] [INFO] [1767602962.629254728] [rtabmap.rgbd_odometry]: RGBDOdometry: qos_camera_info = 0
+[rgbd_odometry-1] [INFO] [1767602962.629291234] [rtabmap.rgbd_odometry]: RGBDOdometry: subscribe_rgbd = false
+[rgbd_odometry-1] [INFO] [1767602962.629309931] [rtabmap.rgbd_odometry]: RGBDOdometry: rgbd_cameras   = 1
+[rgbd_odometry-1] [INFO] [1767602962.629329023] [rtabmap.rgbd_odometry]: RGBDOdometry: keep_color     = false
+[rgbd_odometry-1] [INFO] [1767602962.629346954] [rtabmap.rgbd_odometry]: RGBDOdometry: rgb_transport   = raw
+[rgbd_odometry-1] [INFO] [1767602962.629362261] [rtabmap.rgbd_odometry]: RGBDOdometry: depth_transport = raw
+[rgbd_odometry-1] [INFO] [1767602962.637740820] [rtabmap.rgbd_odometry]: 
+[rgbd_odometry-1] rgbd_odometry subscribed to (approx sync, topic_queue_size=10, sync_queue_size=10):
+[rgbd_odometry-1]    /camera/color/image_raw,
+[rgbd_odometry-1]    /camera/aligned_depth_to_color/image_raw,
+[rgbd_odometry-1]    /camera/color/camera_info
+[rtabmap-2] [INFO] [1767602962.661113854] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Mem/IncrementalMemory"="false" (rosparam)
+[rtabmap-2] [INFO] [1767602962.661236561] [rtabmap.rtabmap]: Setting RTAB-Map parameter "Mem/InitWMWithAllNodes"="true" (rosparam)
+[rtabmap-2] [INFO] [1767602962.692694185] [rtabmap.rtabmap]: RTAB-Map detection rate = 1.000000 Hz
+[rtabmap-2] [INFO] [1767602962.692831984] [rtabmap.rtabmap]: rtabmap: Using database from "~/maps/new_session_202615.db" (182 MB).
+[rtabmap_viz-3] [INFO] [1767602962.851693979] [rtabmap.rtabmap_viz]: rtabmap_viz: Using configuration from "~/.ros/rtabmapGUI.ini"
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:23.299) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:23.506) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:23.723) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rgbd_odometry-1] [WARN] [1767602963.732000129] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033359s, rgb=1767602963.394429s, depth=1767602963.361070s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:23.935) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap_viz-3] libpng warning: iCCP: known incorrect sRGB profile
+[rtabmap_viz-3] libpng warning: iCCP: known incorrect sRGB profile
+[rtabmap_viz-3] libpng warning: iCCP: known incorrect sRGB profile
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:24.145) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap_viz-3] [WARN] [1767602964.241845150] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[rtabmap_viz-3] [INFO] [1767602964.254543466] [rtabmap.rtabmap_viz]: Reading parameters from the ROS server...
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:24.354) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rgbd_odometry-1] [ WARN] (2026-01-05 17:49:24.563) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "base_footprint" passed to lookupTransform argument target_frame does not exist.  (wait_for_transform=0.200000)
+[rgbd_odometry-1] [INFO] [1767602964.721905709] [rtabmap.rgbd_odometry]: Odom: quality=0, std dev=99.995000m|99.995000rad, update time=0.023502s delay=0.526889s
+[rgbd_odometry-1] [INFO] [1767602964.850366014] [rtabmap.rgbd_odometry]: Odom: quality=625, std dev=0.000845m|0.010360rad, update time=0.091954s delay=0.155014s
+[rgbd_odometry-1] [INFO] [1767602965.005031983] [rtabmap.rgbd_odometry]: Odom: quality=617, std dev=0.001088m|0.016214rad, update time=0.098013s delay=0.176258s
+[rgbd_odometry-1] [INFO] [1767602965.091971471] [rtabmap.rgbd_odometry]: Odom: quality=641, std dev=0.000680m|0.010360rad, update time=0.074031s delay=0.129776s
+[rgbd_odometry-1] [INFO] [1767602965.168183893] [rtabmap.rgbd_odometry]: Odom: quality=637, std dev=0.000746m|0.010360rad, update time=0.055095s delay=0.105923s
+[rgbd_odometry-1] [INFO] [1767602965.231268132] [rtabmap.rgbd_odometry]: Odom: quality=616, std dev=0.000971m|0.014170rad, update time=0.056610s delay=0.102296s
+[rgbd_odometry-1] [INFO] [1767602965.327233548] [rtabmap.rgbd_odometry]: Odom: quality=653, std dev=0.001006m|0.014170rad, update time=0.074551s delay=0.131551s
+[rgbd_odometry-1] [INFO] [1767602965.439643793] [rtabmap.rgbd_odometry]: Odom: quality=631, std dev=0.000784m|0.012320rad, update time=0.084641s delay=0.143894s
+[rgbd_odometry-1] [INFO] [1767602965.538589218] [rtabmap.rgbd_odometry]: Odom: quality=628, std dev=0.000870m|0.013634rad, update time=0.096032s delay=0.142770s
+[rgbd_odometry-1] [INFO] [1767602965.661557129] [rtabmap.rgbd_odometry]: Odom: quality=636, std dev=0.000880m|0.011465rad, update time=0.095052s delay=0.165674s
+[rgbd_odometry-1] [INFO] [1767602965.729542763] [rtabmap.rgbd_odometry]: Odom: quality=626, std dev=0.000880m|0.014170rad, update time=0.056403s delay=0.133594s
+[rtabmap-2] [INFO] [1767602965.786883881] [rtabmap.rtabmap]: rtabmap: 2D occupancy grid map loaded (225x254).
+[rgbd_odometry-1] [INFO] [1767602965.800092234] [rtabmap.rgbd_odometry]: Odom: quality=649, std dev=0.000836m|0.013027rad, update time=0.056269s delay=0.104079s
+[rgbd_odometry-1] [INFO] [1767602965.870613186] [rtabmap.rgbd_odometry]: Odom: quality=630, std dev=0.001265m|0.015492rad, update time=0.062089s delay=0.107890s
+[rtabmap-2] [INFO] [1767602965.920341403] [rtabmap.rtabmap]: rtabmap: Working Memory = 134, Local map = 134.
+[rtabmap-2] [INFO] [1767602965.920797131] [rtabmap.rtabmap]: rtabmap: Database version = "0.22.1".
+[rtabmap-2] [INFO] [1767602965.920829536] [rtabmap.rtabmap]: rtabmap: Localization mode (Mem/IncrementalMemory=false)
+[rgbd_odometry-1] [INFO] [1767602965.992386152] [rtabmap.rgbd_odometry]: Odom: quality=633, std dev=0.000814m|0.012320rad, update time=0.109528s delay=0.162943s
+[rtabmap-2] [INFO] [1767602966.023073852] [rtabmap.rtabmap]: Setup callbacks
+[rtabmap-2] [INFO] [1767602966.024573087] [rtabmap.rtabmap]: rtabmap: subscribe_depth = true
+[rtabmap-2] [INFO] [1767602966.024644749] [rtabmap.rtabmap]: rtabmap: subscribe_rgb = true
+[rtabmap-2] [INFO] [1767602966.024670349] [rtabmap.rtabmap]: rtabmap: subscribe_stereo = false
+[rtabmap-2] [INFO] [1767602966.024689281] [rtabmap.rtabmap]: rtabmap: subscribe_rgbd = false (rgbd_cameras=1)
+[rtabmap-2] [INFO] [1767602966.024703531] [rtabmap.rtabmap]: rtabmap: subscribe_sensor_data = false
+[rtabmap-2] [INFO] [1767602966.024718600] [rtabmap.rtabmap]: rtabmap: subscribe_odom_info = true
+[rtabmap-2] [INFO] [1767602966.024737842] [rtabmap.rtabmap]: rtabmap: subscribe_user_data = false
+[rtabmap-2] [INFO] [1767602966.024757934] [rtabmap.rtabmap]: rtabmap: subscribe_scan = false
+[rtabmap-2] [INFO] [1767602966.024774273] [rtabmap.rtabmap]: rtabmap: subscribe_scan_cloud = false
+[rtabmap-2] [INFO] [1767602966.024787223] [rtabmap.rtabmap]: rtabmap: subscribe_scan_descriptor = false
+[rtabmap-2] [INFO] [1767602966.024802085] [rtabmap.rtabmap]: rtabmap: topic_queue_size = 10
+[rtabmap-2] [INFO] [1767602966.024819671] [rtabmap.rtabmap]: rtabmap: sync_queue_size  = 10
+[rtabmap-2] [INFO] [1767602966.024831399] [rtabmap.rtabmap]: rtabmap: qos_image       = 0
+[rtabmap-2] [INFO] [1767602966.024844820] [rtabmap.rtabmap]: rtabmap: qos_camera_info = 0
+[rtabmap-2] [INFO] [1767602966.024910745] [rtabmap.rtabmap]: rtabmap: qos_scan        = 0
+[rtabmap-2] [INFO] [1767602966.024951147] [rtabmap.rtabmap]: rtabmap: qos_odom        = 0
+[rtabmap-2] [INFO] [1767602966.024967099] [rtabmap.rtabmap]: rtabmap: qos_user_data   = 0
+[rtabmap-2] [INFO] [1767602966.024980419] [rtabmap.rtabmap]: rtabmap: approx_sync     = true
+[rtabmap-2] [INFO] [1767602966.025014475] [rtabmap.rtabmap]: Setup depth callback
+[rtabmap-2] [INFO] [1767602966.046885555] [rtabmap.rtabmap]: 
+[rtabmap-2] rtabmap subscribed to (approx sync):
+[rtabmap-2]    /camera/color/image_raw \
+[rtabmap-2]    /camera/aligned_depth_to_color/image_raw \
+[rtabmap-2]    /camera/color/camera_info \
+[rtabmap-2]    /rtabmap/odom_info
+[rgbd_odometry-1] [INFO] [1767602966.126853442] [rtabmap.rgbd_odometry]: Odom: quality=636, std dev=0.000792m|0.011465rad, update time=0.112251s delay=0.163989s
+[rgbd_odometry-1] [INFO] [1767602966.259562992] [rtabmap.rgbd_odometry]: Odom: quality=637, std dev=0.000860m|0.013027rad, update time=0.053087s delay=0.129915s
+[rtabmap_viz-3] [INFO] [1767602966.305047704] [rtabmap.rtabmap_viz]: Parameters read = 387
+[rtabmap_viz-3] [INFO] [1767602966.305091470] [rtabmap.rtabmap_viz]: Parameters successfully read.
+[rgbd_odometry-1] [INFO] [1767602966.401629560] [rtabmap.rgbd_odometry]: Odom: quality=621, std dev=0.001178m|0.015492rad, update time=0.087380s delay=0.205271s
+[rgbd_odometry-1] [INFO] [1767602966.478982464] [rtabmap.rgbd_odometry]: Odom: quality=640, std dev=0.000900m|0.012320rad, update time=0.072129s delay=0.182553s
+[rgbd_odometry-1] [INFO] [1767602966.545814748] [rtabmap.rgbd_odometry]: Odom: quality=632, std dev=0.001099m|0.017944rad, update time=0.058988s delay=0.149306s
+[rgbd_odometry-1] [INFO] [1767602966.668576761] [rtabmap.rgbd_odometry]: Odom: quality=620, std dev=0.000910m|0.010360rad, update time=0.076890s delay=0.138652s
+[rgbd_odometry-1] [INFO] [1767602966.762490298] [rtabmap.rgbd_odometry]: Odom: quality=636, std dev=0.000842m|0.014651rad, update time=0.077906s delay=0.165848s
+[rgbd_odometry-1] [INFO] [1767602966.833199545] [rtabmap.rgbd_odometry]: Odom: quality=644, std dev=0.000813m|0.012320rad, update time=0.065742s delay=0.136488s
+[rtabmap_viz-3] [INFO] [1767602966.873579028] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_depth = true
+[rtabmap_viz-3] [INFO] [1767602966.873650489] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_rgb = true
+[rtabmap_viz-3] [INFO] [1767602966.873660866] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_stereo = false
+[rtabmap_viz-3] [INFO] [1767602966.873667324] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_rgbd = false (rgbd_cameras=1)
+[rtabmap_viz-3] [INFO] [1767602966.873676874] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_sensor_data = false
+[rtabmap_viz-3] [INFO] [1767602966.873686122] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_odom_info = true
+[rtabmap_viz-3] [INFO] [1767602966.873692655] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_user_data = false
+[rtabmap_viz-3] [INFO] [1767602966.873699576] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_scan = false
+[rtabmap_viz-3] [INFO] [1767602966.873707641] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_scan_cloud = false
+[rtabmap_viz-3] [INFO] [1767602966.873714187] [rtabmap.rtabmap_viz]: rtabmap_viz: subscribe_scan_descriptor = false
+[rtabmap_viz-3] [INFO] [1767602966.873722837] [rtabmap.rtabmap_viz]: rtabmap_viz: topic_queue_size = 10
+[rtabmap_viz-3] [INFO] [1767602966.873730475] [rtabmap.rtabmap_viz]: rtabmap_viz: sync_queue_size  = 10
+[rtabmap_viz-3] [INFO] [1767602966.873737433] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_image       = 0
+[rtabmap_viz-3] [INFO] [1767602966.873745527] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_camera_info = 0
+[rtabmap_viz-3] [INFO] [1767602966.873753617] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_scan        = 0
+[rtabmap_viz-3] [INFO] [1767602966.873761986] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_odom        = 0
+[rtabmap_viz-3] [INFO] [1767602966.873770069] [rtabmap.rtabmap_viz]: rtabmap_viz: qos_user_data   = 0
+[rtabmap_viz-3] [INFO] [1767602966.873777055] [rtabmap.rtabmap_viz]: rtabmap_viz: approx_sync     = true
+[rtabmap_viz-3] [INFO] [1767602966.873800977] [rtabmap.rtabmap_viz]: Setup depth callback
+[rtabmap_viz-3] [INFO] [1767602966.893554911] [rtabmap.rtabmap_viz]: 
+[rtabmap_viz-3] rtabmap_viz subscribed to (approx sync):
+[rtabmap_viz-3]    /camera/color/image_raw \
+[rtabmap_viz-3]    /camera/aligned_depth_to_color/image_raw \
+[rtabmap_viz-3]    /camera/color/camera_info \
+[rtabmap_viz-3]    /rtabmap/odom_info
+[rtabmap_viz-3] [INFO] [1767602966.899495513] [rtabmap.rtabmap_viz]: rtabmap_viz started.
+[rgbd_odometry-1] [INFO] [1767602966.954991648] [rtabmap.rgbd_odometry]: Odom: quality=608, std dev=0.000787m|0.011465rad, update time=0.104931s delay=0.191562s
+[rgbd_odometry-1] [INFO] [1767602967.084530491] [rtabmap.rgbd_odometry]: Odom: quality=646, std dev=0.000809m|0.011465rad, update time=0.093583s delay=0.187678s
+[rgbd_odometry-1] [INFO] [1767602967.183241317] [rtabmap.rgbd_odometry]: Odom: quality=627, std dev=0.001174m|0.014651rad, update time=0.087446s delay=0.152954s
+[rgbd_odometry-1] [INFO] [1767602967.307215865] [rtabmap.rgbd_odometry]: Odom: quality=632, std dev=0.000824m|0.013027rad, update time=0.110226s delay=0.176858s
+[rgbd_odometry-1] [INFO] [1767602967.446267806] [rtabmap.rgbd_odometry]: Odom: quality=612, std dev=0.000866m|0.011465rad, update time=0.129529s delay=0.182342s
+[rgbd_odometry-1] [WARN] [1767602967.487826947] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033358s, rgb=1767602967.363858s, depth=1767602967.397216s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602967.553729982] [rtabmap.rgbd_odometry]: Odom: quality=634, std dev=0.000896m|0.013634rad, update time=0.065427s delay=0.156509s
+[rgbd_odometry-1] [INFO] [1767602967.660540764] [rtabmap.rgbd_odometry]: Odom: quality=627, std dev=0.000840m|0.014170rad, update time=0.079180s delay=0.129887s
+[rgbd_odometry-1] [INFO] [1767602967.791217956] [rtabmap.rgbd_odometry]: Odom: quality=613, std dev=0.000891m|0.015865rad, update time=0.077649s delay=0.160492s
+[rgbd_odometry-1] [INFO] [1767602967.870437338] [rtabmap.rgbd_odometry]: Odom: quality=622, std dev=0.000902m|0.013027rad, update time=0.068126s delay=0.139637s
+[rgbd_odometry-1] [INFO] [1767602967.944622499] [rtabmap.rgbd_odometry]: Odom: quality=611, std dev=0.000828m|0.010360rad, update time=0.053463s delay=0.113749s
+[rgbd_odometry-1] [INFO] [1767602968.056583439] [rtabmap.rgbd_odometry]: Odom: quality=632, std dev=0.000923m|0.011465rad, update time=0.054866s delay=0.125633s
+[rgbd_odometry-1] [INFO] [1767602968.157530121] [rtabmap.rgbd_odometry]: Odom: quality=595, std dev=0.001175m|0.018423rad, update time=0.078478s delay=0.126504s
+[rgbd_odometry-1] [INFO] [1767602968.262755269] [rtabmap.rgbd_odometry]: Odom: quality=632, std dev=0.000847m|0.011465rad, update time=0.065881s delay=0.165015s
+[rgbd_odometry-1] [INFO] [1767602968.351205059] [rtabmap.rgbd_odometry]: Odom: quality=625, std dev=0.000915m|0.012320rad, update time=0.062049s delay=0.120023s
+[rgbd_odometry-1] [INFO] [1767602968.463037060] [rtabmap.rgbd_odometry]: Odom: quality=648, std dev=0.000844m|0.013027rad, update time=0.110837s delay=0.165144s
+[rgbd_odometry-1] [INFO] [1767602968.567520114] [rtabmap.rgbd_odometry]: Odom: quality=640, std dev=0.000938m|0.014170rad, update time=0.081205s delay=0.136191s
+[rgbd_odometry-1] [INFO] [1767602968.645695711] [rtabmap.rgbd_odometry]: Odom: quality=624, std dev=0.000755m|0.013634rad, update time=0.068332s delay=0.114296s
+[rgbd_odometry-1] [INFO] [1767602968.737348522] [rtabmap.rgbd_odometry]: Odom: quality=631, std dev=0.000870m|0.010360rad, update time=0.053180s delay=0.105873s
+[rgbd_odometry-1] [INFO] [1767602968.814648515] [rtabmap.rgbd_odometry]: Odom: quality=618, std dev=0.001252m|0.018649rad, update time=0.062084s delay=0.116453s
+[rgbd_odometry-1] [INFO] [1767602968.910672175] [rtabmap.rgbd_odometry]: Odom: quality=627, std dev=0.000878m|0.012320rad, update time=0.045656s delay=0.112403s
+[rgbd_odometry-1] [INFO] [1767602969.005507663] [rtabmap.rgbd_odometry]: Odom: quality=624, std dev=0.000838m|0.013634rad, update time=0.044564s delay=0.140524s
+[rgbd_odometry-1] [INFO] [1767602969.082639067] [rtabmap.rgbd_odometry]: Odom: quality=621, std dev=0.000809m|0.010360rad, update time=0.062873s delay=0.184298s
+[rgbd_odometry-1] [INFO] [1767602969.154975942] [rtabmap.rgbd_odometry]: Odom: quality=635, std dev=0.000706m|0.011465rad, update time=0.063279s delay=0.123205s
+[rgbd_odometry-1] [INFO] [1767602969.276248292] [rtabmap.rgbd_odometry]: Odom: quality=621, std dev=0.000872m|0.010360rad, update time=0.055604s delay=0.144404s
+[rgbd_odometry-1] [INFO] [1767602969.395005446] [rtabmap.rgbd_odometry]: Odom: quality=637, std dev=0.000777m|0.012320rad, update time=0.047206s delay=0.129730s
+[rgbd_odometry-1] [INFO] [1767602969.469418357] [rtabmap.rgbd_odometry]: Odom: quality=607, std dev=0.001029m|0.014651rad, update time=0.055878s delay=0.170786s
+[rgbd_odometry-1] [INFO] [1767602969.549212726] [rtabmap.rgbd_odometry]: Odom: quality=621, std dev=0.000660m|0.010360rad, update time=0.043938s delay=0.183866s
+[rgbd_odometry-1] [INFO] [1767602969.634317439] [rtabmap.rgbd_odometry]: Odom: quality=624, std dev=0.000752m|0.012320rad, update time=0.059493s delay=0.235613s
+[rgbd_odometry-1] [INFO] [1767602969.769289570] [rtabmap.rgbd_odometry]: Odom: quality=638, std dev=0.000783m|0.010360rad, update time=0.066887s delay=0.270511s
+[rgbd_odometry-1] [INFO] [1767602969.830299133] [rtabmap.rgbd_odometry]: Odom: quality=624, std dev=0.000831m|0.014651rad, update time=0.051196s delay=0.098018s
+[rgbd_odometry-1] [INFO] [1767602969.921858098] [rtabmap.rgbd_odometry]: Odom: quality=621, std dev=0.000938m|0.013634rad, update time=0.050272s delay=0.156216s
+[rgbd_odometry-1] [INFO] [1767602970.013545024] [rtabmap.rgbd_odometry]: Odom: quality=634, std dev=0.001156m|0.015089rad, update time=0.054856s delay=0.181191s
+[rgbd_odometry-1] [INFO] [1767602970.096971964] [rtabmap.rgbd_odometry]: Odom: quality=613, std dev=0.000841m|0.012320rad, update time=0.049568s delay=0.197903s
+[rgbd_odometry-1] [INFO] [1767602970.193571749] [rtabmap.rgbd_odometry]: Odom: quality=612, std dev=0.000871m|0.012320rad, update time=0.049156s delay=0.194426s
+[rgbd_odometry-1] [INFO] [1767602970.276701574] [rtabmap.rgbd_odometry]: Odom: quality=641, std dev=0.000876m|0.012320rad, update time=0.059808s delay=0.210842s
+[rgbd_odometry-1] [INFO] [1767602970.380977323] [rtabmap.rgbd_odometry]: Odom: quality=642, std dev=0.000699m|0.010360rad, update time=0.052796s delay=0.248402s
+[rgbd_odometry-1] [INFO] [1767602970.487046420] [rtabmap.rgbd_odometry]: Odom: quality=643, std dev=0.001010m|0.013027rad, update time=0.051612s delay=0.254395s
+[rgbd_odometry-1] [INFO] [1767602970.582130165] [rtabmap.rgbd_odometry]: Odom: quality=616, std dev=0.000739m|0.012320rad, update time=0.052804s delay=0.282763s
+[rgbd_odometry-1] [INFO] [1767602970.700776483] [rtabmap.rgbd_odometry]: Odom: quality=626, std dev=0.000818m|0.010360rad, update time=0.050384s delay=0.301337s
+[rgbd_odometry-1] [INFO] [1767602970.805019825] [rtabmap.rgbd_odometry]: Odom: quality=638, std dev=0.000801m|0.010360rad, update time=0.057794s delay=0.338862s
+[rgbd_odometry-1] [INFO] [1767602970.868312223] [rtabmap.rgbd_odometry]: Odom: quality=633, std dev=0.000810m|0.014170rad, update time=0.048269s delay=0.335440s
+[rgbd_odometry-1] [INFO] [1767602970.981159399] [rtabmap.rgbd_odometry]: Odom: quality=632, std dev=0.000755m|0.010360rad, update time=0.080735s delay=0.381573s
+[rtabmap-2] [WARN] [1767602971.054041196] [rtabmap.rtabmap]: rtabmap: Did not receive data since 5 seconds! Make sure the input topics are published ("$ ros2 topic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). Ajusting topic_queue_size (10) and sync_queue_size (10) can also help for better synchronization if framerates and/or delays are different. If topics are not published at the same rate, you could increase "sync_queue_size" and/or "topic_queue_size" parameters (current=10 and 10 respectively).
+[rtabmap-2] rtabmap subscribed to (approx sync):
+[rtabmap-2]    /camera/color/image_raw \
+[rtabmap-2]    /camera/aligned_depth_to_color/image_raw \
+[rtabmap-2]    /camera/color/camera_info \
+[rtabmap-2]    /rtabmap/odom_info
+[rgbd_odometry-1] [INFO] [1767602971.124644716] [rtabmap.rgbd_odometry]: Odom: quality=92, std dev=0.082171m|0.067972rad, update time=0.046129s delay=0.424989s
+[rgbd_odometry-1] [WARN] [1767602971.202297145] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.066718s, rgb=1767602970.866432s, depth=1767602970.799714s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602971.259254527] [rtabmap.rgbd_odometry]: Odom: quality=151, std dev=0.069739m|0.032215rad, update time=0.056360s delay=0.392818s
+[rgbd_odometry-1] [WARN] [1767602971.274587468] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.066730s, rgb=1767602971.133282s, depth=1767602971.066551s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602971.353615195] [rtabmap.rgbd_odometry]: Odom: quality=214, std dev=0.042610m|0.028590rad, update time=0.078039s delay=0.220319s
+[rgbd_odometry-1] [WARN] [1767602971.387565120] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033338s, rgb=1767602971.166638s, depth=1767602971.199976s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602971.471102783] [rtabmap.rgbd_odometry]: Odom: quality=307, std dev=0.001313m|0.020388rad, update time=0.081910s delay=0.271112s
+[rgbd_odometry-1] [INFO] [1767602971.781162229] [rtabmap.rgbd_odometry]: Odom: quality=128, std dev=0.003378m|0.023506rad, update time=0.072606s delay=0.247600s
+[rgbd_odometry-1] [INFO] [1767602972.512136717] [rtabmap.rgbd_odometry]: Odom: quality=133, std dev=0.003230m|0.024346rad, update time=0.066801s delay=0.177999s
+[rgbd_odometry-1] [WARN] [1767602972.837599219] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.066715s, rgb=1767602972.367491s, depth=1767602972.434206s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602972.932612912] [rtabmap.rgbd_odometry]: Odom: quality=132, std dev=0.005580m|0.028652rad, update time=0.094387s delay=0.498402s
+[rgbd_odometry-1] [INFO] [1767602973.058214621] [rtabmap.rgbd_odometry]: Odom: quality=152, std dev=0.003808m|0.027820rad, update time=0.078903s delay=0.323789s
+[rgbd_odometry-1] [WARN] [1767602973.490116161] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033359s, rgb=1767602972.834500s, depth=1767602972.867860s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [WARN] [1767602973.491502840] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.066737s, rgb=1767602973.101376s, depth=1767602973.034639s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602973.584448398] [rtabmap.rgbd_odometry]: Odom: quality=165, std dev=0.002190m|0.024831rad, update time=0.093062s delay=0.716585s
+[rgbd_odometry-1] [WARN] [1767602973.615476648] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.100061s, rgb=1767602973.268174s, depth=1767602973.368235s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rtabmap-2] [ WARN] (2026-01-05 17:49:33.692) MsgConversion.cpp:2010::ge
+[rgbd_odometry-1] [WARN] [1767602979.043548977] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033361s, rgb=1767602978.638757s, depth=1767602978.605396s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [WARN] [1767602979.069059933] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.066739s, rgb=1767602978.872280s, depth=1767602978.805541s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602979.132835754] [rtabmap.rgbd_odometry]: Odom: quality=171, std dev=0.001608m|0.023616rad, update time=0.089373s delay=0.627506s
+[rgbd_odometry-1] [WARN] [1767602979.164817622] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033342s, rgb=1767602979.039082s, depth=1767602979.072424s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602979.246483816] [rtabmap.rgbd_odometry]: Odom: quality=215, std dev=0.000769m|0.017423rad, update time=0.086407s delay=0.307476s
+[rgbd_odometry-1] [INFO] [1767602979.343412711] [rtabmap.rgbd_odometry]: Odom: quality=218, std dev=0.001463m|0.021036rad, update time=0.086444s delay=0.237604s
+[rgbd_odometry-1] [WARN] [1767602979.413168530] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033378s, rgb=1767602979.172524s, depth=1767602979.139146s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [WARN] [1767602979.467023123] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033360s, rgb=1767602979.305968s, depth=1767602979.339328s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602979.526209850] [rtabmap.rgbd_odometry]: Odom: quality=220, std dev=0.001371m|0.025972rad, update time=0.111947s delay=0.353681s
+[rtabmap-2] [ WARN] (2026-01-05 17:49:39.618) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "camera_color_optical_frame" passed to lookupTransform argument source_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap-2] [ERROR] (2026-01-05 17:49:39.618) MsgConversion.cpp:2182::convertRGBDMsgs() TF of received image for camera 0 at time 1767602978.438608s is not set!
+[rtabmap-2] [ERROR] [1767602979.618949528] [rtabmap.rtabmap]: Could not convert rgb/depth msgs! Aborting rtabmap update...
+[rgbd_odometry-1] [INFO] [1767602979.661097670] [rtabmap.rgbd_odometry]: Odom: quality=114, std dev=0.003215m|0.025637rad, update time=0.097716s delay=0.221683s
+[rgbd_odometry-1] [INFO] [1767602980.207256897] [rtabmap.rgbd_odometry]: Odom: quality=210, std dev=0.000771m|0.015492rad, update time=0.103473s delay=0.400871s
+[rtabmap-2] [ WARN] (2026-01-05 17:49:40.298) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "camera_color_optical_frame" passed to lookupTransform argument source_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap-2] [ERROR] (2026-01-05 17:49:40.298) MsgConversion.cpp:2182::convertRGBDMsgs() TF of received image for camera 0 at time 1767602979.806365s is not set!
+[rtabmap-2] [ERROR] [1767602980.298047363] [rtabmap.rtabmap]: Could not convert rgb/depth msgs! Aborting rtabmap update...
+[rgbd_odometry-1] [WARN] [1767602980.376448861] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033375s, rgb=1767602980.306740s, depth=1767602980.273365s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602980.393282590] [rtabmap.rgbd_odometry]: Odom: quality=238, std dev=0.000613m|0.013634rad, update time=0.110631s delay=0.353390s
+[rtabmap-2] [ WARN] (2026-01-05 17:49:40.582) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "camera_color_optical_frame" passed to lookupTransform argument source_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap-2] [ERROR] (2026-01-05 17:49:40.582) MsgConversion.cpp:2182::convertRGBDMsgs() TF of received image for camera 0 at time 1767602979.839722s is not set!
+[rtabmap-2] [ERROR] [1767602980.582273321] [rtabmap.rtabmap]: Could not convert rgb/depth msgs! Aborting rtabmap update...
+[rgbd_odometry-1] [INFO] [1767602980.613198549] [rtabmap.rgbd_odometry]: Odom: quality=265, std dev=0.001235m|0.020720rad, update time=0.119883s delay=0.273098s
+[rgbd_odometry-1] [INFO] [1767602981.165890801] [rtabmap.rgbd_odometry]: Odom: quality=108, std dev=0.002385m|0.023281rad, update time=0.087853s delay=0.358789s
+[rgbd_odometry-1] [WARN] [1767602981.222274832] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.033358s, rgb=1767602980.873813s, depth=1767602980.840455s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602981.327837226] [rtabmap.rgbd_odometry]: Odom: quality=137, std dev=0.002930m|0.024041rad, update time=0.104750s delay=0.454019s
+[rtabmap-2] [ERROR] [1767602981.410997665] [rtabmap.rtabmap]: Could not convert rgb/depth msgs! Aborting rtabmap update...
+[rtabmap-2] [ WARN] (2026-01-05 17:49:41.410) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "camera_color_optical_frame" passed to lookupTransform argument source_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap-2] [ERROR] (2026-01-05 17:49:41.410) MsgConversion.cpp:2182::convertRGBDMsgs() TF of received image for camera 0 at time 1767602980.807096s is not set!
+[rgbd_odometry-1] [WARN] [1767602981.856734273] [rtabmap.rgbd_odometry]: The time difference between rgb and depth frames is high (diff=0.133450s, rgb=1767602981.407547s, depth=1767602981.274097s). You may want to set approx_sync_max_interval lower than 0.02s to reject spurious bad synchronizations or use approx_sync=false if streams have all the exact same timestamp.
+[rgbd_odometry-1] [INFO] [1767602981.931599421] [rtabmap.rgbd_odometry]: Odom: quality=219, std dev=0.000969m|0.018867rad, update time=0.188622s delay=0.690839s
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rgbd_odometry-1] [INFO] [1767602982.215166597] [rclcpp]: signal_handler(signum=2)
+[rtabmap-2] [INFO] [1767602982.215174508] [rclcpp]: signal_handler(signum=2)
+[rtabmap_viz-3] [INFO] [1767602982.215231442] [rtabmap.rtabmap_viz]: rtabmap_viz stopping spinner...
+[rtabmap_viz-3] [INFO] [1767602982.217326172] [rtabmap.rtabmap_viz]: rtabmap_viz: All done! Closing...
+[rtabmap-2] [ WARN] (2026-01-05 17:49:42.222) MsgConversion.cpp:2010::getTransform() (getting transform base_footprint -> camera_color_optical_frame) "camera_color_optical_frame" passed to lookupTransform argument source_frame does not exist.  (wait_for_transform=0.200000)
+[rtabmap-2] [ERROR] (2026-01-05 17:49:42.222) MsgConversion.cpp:2182::convertRGBDMsgs() TF of received image for camera 0 at time 1767602981.240738s is not set!
+[rtabmap-2] [ERROR] [1767602982.222976819] [rtabmap.rtabmap]: Could not convert rgb/depth msgs! Aborting rtabmap update...
+[rtabmap-2] [INFO] [1767602982.315729904] [rtabmap.rtabmap]: Parameters are not saved (No configuration file provided...)
+[rtabmap-2] rtabmap: Saving database/long-term memory... (located at ~/maps/new_session_202615.db)
+[rtabmap-2] rtabmap: 2D occupancy grid map saved.
+[rgbd_odometry-1] [INFO] [1767602982.365838884] [rtabmap.rgbd_odometry]: Odom: quality=220, std dev=0.000475m|0.013027rad, update time=0.150849s delay=0.524640s
+[ERROR] [rtabmap_viz-3]: process has died [pid 157704, exit code 255, cmd '/opt/ros/humble/lib/rtabmap_viz/rtabmap_viz ~/.ros/rtabmap_gui.ini --ros-args --log-level rtabmap.rtabmap_viz:=info --log-level rtabmap_viz:=info --ros-args -r __node:=rtabmap_viz -r __ns:=/rtabmap -p use_sim_time:=False --params-file /tmp/launch_params_64kn95ps -r rgb/image:=/camera/color/image_raw -r depth/image:=/camera/aligned_depth_to_color/image_raw -r rgb/camera_info:=/camera/color/camera_info -r rgbd_image:=rgbd_image_relay -r left/image_rect:=/stereo_camera/left/image_rect_color -r right/image_rect:=/stereo_camera/right/image_rect -r left/camera_info:=/stereo_camera/left/camera_info -r right/camera_info:=/stereo_camera/right/camera_info -r scan:=/scan -r scan_cloud:=/scan_cloud -r odom:=odom'].
+[rtabmap-2] rtabmap: Saving database/long-term memory...done! (located at ~/maps/new_session_202615.db, 182 MB)
+[INFO] [rgbd_odometry-1]: process has finished cleanly [pid 157700]
+[INFO] [rtabmap-2]: process has finished cleanly [pid 157702]
